@@ -9,6 +9,7 @@
   "author": "Matthew E Semroska",
   "license": "ISC",
   "dependencies": {
-    "Sentimental": "^1.0.1"
+    "Sentimental": "^1.0.1",
+    "eslint": "^7.21.0"
   }
 }

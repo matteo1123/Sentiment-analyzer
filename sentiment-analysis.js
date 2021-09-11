@@ -16,7 +16,7 @@ for(let i = 0; i < lines.length; i++) {
                 line_arr.push(string_accumulator)                
             }
 
-            string_accumulator = ""
+            // string_accumulator = ""
 
     } 
     else if(lines[i].match(/\d+:\d+/) && skipping) {
@@ -25,10 +25,10 @@ for(let i = 0; i < lines.length; i++) {
 
     if(!skipping) {
         if(!lines[i].match(/\d+:\d+/) && lines[i].length > 1) {
-            string_accumulator += " " + lines[i]
+            string_accumulator += " " + lines[i] + "\n"
         }
     }
 }
 
 
-    
+    console.log(string_accumulator)
